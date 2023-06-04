@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Day In My Life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <span class="navbar-title">A Day In My Life</span>
+        <ul class="nav-links">
+          <li><a href="#">Note</a></li>
+          <li><a href="#">Calender</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="greeting">
+      <span id="greeting-text">Selamat Pagi, Dimas</span>
+    </div>
+    <div class="datetime">
+      <span id="current-date"></span>
+      <span id="current-time"></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+   <button type="button" data-bs-target="#demo" data-bs-slide
+  to="0" class="active"></button>
+   <button type="button" data-bs-target="#demo" data-bs-slideto="1"></button>
+   <button type="button" data-bs-target="#demo" data-bs-slideto="2"></button>
+  </div>
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+   <div class="carousel-item active">
+   <img src="https://www.gotravelly.com/blog/wp-content/uploads/2020/08/thai-alley.jpg" alt="Los Angeles" class="d-block w-100">
+   </div>
+  </div>
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bstarget="#demo" data-bs-slide="prev">
+   <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bstarget="#demo" data-bs-slide="next">
+   <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+      
+
+    <div class="card-container">
+      <div class="card">
+        <img src="https://img.okezone.com/content/2023/01/27/25/2754054/6-rekomendasi-destinasi-wisata-di-tokyo-untuk-liburan-bersama-keluarga-jB84eQVJPI.jpg" alt="Image.1" />
+        <h1>Tokyo, Japan</h1>
+        <p>First Time to Japaannn!!</p>
+      </div>
+      <div class="card">
+        <img src="https://www.cathaypacific.com/content/dam/focal-point/cx/inspiration/2021/02/Hero-Racha_resort-island-phuket-island-thailand.jpg" alt="Image.2" />
+        <h1>Phuket, Thailand</h1>
+        <p>Welcomee Thailanddd</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-2.tstatic.net/bangka/foto/bank/images/20220815-Time-Square-New-York-City.jpg" alt="Image.3" />
+        <h1>New York, USA</h1>
+        <p>In New Yorkkkkkk....</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2023 Pengembangan Desain Web</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 3000  // Specify the slide interval in milliseconds (e.g., 3000 = 3 seconds)
+      });
+    });
+  </script>
+</body>
+</html>
